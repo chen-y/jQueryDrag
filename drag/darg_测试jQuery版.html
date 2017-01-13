@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>drag布局</title>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/dargFlex.js" type="text/javascript" charset="utf-8"></script>
+
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			#target{
+				border: 1px solid #666;
+				margin:0 auto;
+				position:relative;
+				
+			}
+			.header{
+				height:50px;
+				background: #FFA500;
+				cursor: all-scroll;
+			}
+			.banner{
+				height:100px;
+				background: lawngreen;
+				cursor: all-scroll;
+			}
+			.nav{
+				height:50px;
+				background: hotpink;
+				cursor: all-scroll;
+			}
+			.menu{
+				height:200px;
+				background: mediumvioletred;
+				cursor: all-scroll;
+			}
+		</style>
+		<script type="text/javascript">
+			$(function  () {
+				$(target).dargFlex('drag');
+			});
+		</script>
+	</head>
+	<body id="target">
+		<div class="header drag"></div>
+		<div class="banner drag"></div>
+		<div class="nav drag"></div>
+		<div class="menu drag"></div>
+
+	</body>
+</html>
